@@ -105,7 +105,7 @@ TestGLM <- function(sds,ods,mSet,k,formulas,families){
     sampleList <- c(sampleList,list(sample))
   }
   
-  for(i in c(1:length(test))){
+  for(i in c(1:length(formulas))){
     message(paste0("fit ",i,": "),appendLF = FALSE)
     formula <- formulas[[i]]
     family <- families[[i]]
